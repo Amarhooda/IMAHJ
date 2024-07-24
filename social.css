@@ -1,0 +1,15 @@
+.main{
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  margin: 45px 20px;
+  font-size: larger;
+}
+.main img{
+  width: 80vw;
+  margin: 40px 10px;
+  transition: all 0.2s ease-in-out;
+}
+.main img:hover{
+  transform: scale(1.07);
+}

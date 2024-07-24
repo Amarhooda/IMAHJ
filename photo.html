@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="photo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav1">
+        <span class="logos">
+          <img src="/IMG_20240401_112837.jpg" alt="" />
+          <span class="logo"><a href="/index.html">IMAHJ</a></span>
+        </span>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="/products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/social.html">Social</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/photo.html">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About Me</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
+    <div class="text">
+      <h1>Some photos of me!</h1>
+    </div>
+    <div class="imagecarousel">
+      <img src="/Personal/1721748489793.jpg" alt="" />
+
+      <img src="/Personal/1721748489796.jpg" alt="" />
+
+      <img src="/Personal/1721748489799.jpg" alt="" />
+
+      <img src="/Personal/1721748489802.jpg" alt="" />
+    </div>
+    <div class="imagecarousel">
+      <img src="/Personal/1721748489805.jpg" alt="" />
+
+      <img src="/Personal/1721748489807.jpg" alt="" />
+
+      <img src="/Personal/1721748489810.jpg" alt="" />
+
+      <img src="/Personal/1721748489812.jpg" alt="" />
+    </div>
+    <div class="text">
+      <h1>Some Random photos.</h1>
+    </div>
+    <div class="imagecarousel">
+      <img src="/Random/1721727426076.jpg" alt="" />
+
+      <img src="/Random/1721727426084.jpg" alt="" />
+
+      <img src="/Random/1721748489774.jpg" alt="" />
+
+      <img src="/Random/1721748489767.jpg" alt="" />
+    </div>
+    <div class="imagecarousel">
+      <img src="/Random/1721748489770.jpg" alt="" />
+
+      <img src="/Random/1721748489788.jpg" alt="" />
+
+      <img src="/Random/1721727426091.jpg" alt="" />
+
+      <img src="/Random/1721748489780.jpg" alt="" />
+    </div>
+    <div class="imagecarousel">
+      <img src="/Random/1721748489783.jpg" alt="" />
+
+      <img src="/Random/1721748489785.jpg" alt="" />
+
+      <img src="/Random/1721748489772.jpg" alt="" />
+
+      <img src="/Random/1721748489791.jpg" alt="" />
+    </div>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>

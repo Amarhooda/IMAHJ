@@ -1,0 +1,31 @@
+.text {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  margin: 45px 20px;
+  font-size: larger;
+}
+
+.imagecarousel {
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* max-width: 100vw; */
+}
+
+.imagecarousel img {
+  margin:30px auto;
+  width: 500px;
+  box-shadow: 6px -3px 40px #fffdfd;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+@media only screen and (max-width: 500px){
+.imagecarousel img{
+  width: 90vw;
+}
+}
+.imagecarousel img:hover{
+transform: scale(1.1);
+}
